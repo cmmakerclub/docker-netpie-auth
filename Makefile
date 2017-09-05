@@ -13,7 +13,7 @@ push:
 
 test:
 	#docker run --rm $(DOCKER_IMAGE_TAGNAME) /bin/echo "Success."
-	docker run --rm -it cmmc/netpie-auth netpie-auth -z 
+	docker run --rm -it cmmc/netpie-auth netpie-auth --help
 
 rmi:
 	docker rmi -f $(DOCKER_IMAGE_TAGNAME)
